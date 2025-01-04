@@ -1,4 +1,4 @@
-# Language-Classification-Program
+# English-or-Dutch-Learning-Algorithm
 
 The program reads a number of Dutch and English sentences (located in the training folder) and trains a hypothesis (saved in hypothesis.txt) using given features (located in the features folder). Users can choose to train the hypothesis using a decision tree or AdaBoost. The program can then use this hypothesis to predict what language a given sentence is.
 
