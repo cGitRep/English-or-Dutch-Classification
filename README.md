@@ -26,3 +26,5 @@ The program reads a number of Dutch and English sentences (located in the traini
 -> I use "hypothesis.txt" as the file to write to when creating a hypothesis, but it can be any file
 
 -> All feature, testing, and training files must follow the same formating as the ones given
+
+-> At the top of the "lab3.py" file there are two constants users can change. "K" is the number of AdaBoost iterations and "tree_depth" is the max depth for the decision trees. The current values in the file were used to create the hypothesis in "best.model"
