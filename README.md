@@ -16,4 +16,6 @@ predict "examples" "features" "hypothesis"
 - features: file that contains the features used to create the hypothesis
 - hypothesis: the trained decision tree/ensemble
 
-The given hypothesis in "hypothesis.txt" is currently the best decision tree I have come up with and has around a 97.8% success rate 
+
+-> The given hypothesis in "best.model" is currently the best decision tree I have come up with and has around a 97.8% success rate 
+-> I use "hypothesis.txt" as the file to write to when creating a hypothesis
