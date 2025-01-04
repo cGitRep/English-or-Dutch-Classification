@@ -1,22 +1,28 @@
 # Language-Classification-Program
 
-The program reads a number of Dutch and English sentences (located in train.dat files) and trains a hypothesis (saved in hypothesis.txt) using given features (located in features.txt files). Users can choose to train the hypothesis using a decision tree or AdaBoost. The program can then use this hypothesis to predict what language a givene sentence is.
+The program reads a number of Dutch and English sentences (located in the training folder) and trains a hypothesis (saved in hypothesis.txt) using given features (located in the features folder). Users can choose to train the hypothesis using a decision tree or AdaBoost. The program can then use this hypothesis to predict what language a given sentence is.
 
 
-# Command Line Arguments
+# 2 types of command line arguments
 
-train "examples" "features" "hypothesisOut" "learning-type"
-- examples: file that contains a number of sentences and whether they are english or dutch (must follow the same formating as the train.dat files)
-- features: file that contains the features (separated by newlines) used to test the hypothesis
+**train "train-examples" "features" "hypothesisOut" "learning-type"**
+- train-examples: file that contains a number of sentences and whether they are English or Dutch
+- features: file that contains the features that will be used to train the hypothesis
 - hypothesisOut: name of the file that the program will write the hypothesis to
 - learning-type: either "dt" (decision tree) or "ada" (AdaBoost)
+- ex: "python lab3.py train train_medium.dat features.txt hypothesis.txt dt"
 
-predict "examples" "features" "hypothesis"
-- examples: file that contains sentences (separated by newlines) that are either in English or Dutch
+**predict "test-examples" "features" "hypothesis"**
+- test-examples: file that contains sentences that are either in English or Dutch
 - features: file that contains the features used to create the hypothesis
-- hypothesis: the trained decision tree/ensemble
+- hypothesis: the trained decision tree/ensemble created by the program
+- for each sentence, the program returns either "en" for English or "nl" for Dutch
+- ex: "python lab3.py predict large_test features.txt hypothesis.txt"
 
 
--> The given hypothesis in "best.model" is currently the best decision tree I have come up with and has around a 97.8% success rate 
+# Other info
+-> The given hypothesis in "best.model" is currently the best decision tree I've come up with and has around a 97.8% success rate 
 
--> I use "hypothesis.txt" as the file to write to when creating a hypothesis
+-> I use "hypothesis.txt" as the file to write to when creating a hypothesis, but it can be any file
+
+-> All feature, testing, and training files must follow the same formating as the ones given
