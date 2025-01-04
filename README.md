@@ -18,4 +18,5 @@ predict "examples" "features" "hypothesis"
 
 
 -> The given hypothesis in "best.model" is currently the best decision tree I have come up with and has around a 97.8% success rate 
+
 -> I use "hypothesis.txt" as the file to write to when creating a hypothesis
