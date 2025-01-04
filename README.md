@@ -1,6 +1,6 @@
-# Language-Classification-Lab
+# Language-Classification-Program
 
-The program reads a number of Dutch and English sentences (located in train.dat files) and trains a hypothesis (saved in hypothesis.txt) using given features (located in features.txt files). Users can choose to train the hypothesis using a decision tree or AdaBoost. The program can then use this hypothesis to predict what language a givene sentence is. Written for the Intro to AI lab 3 assignment.
+The program reads a number of Dutch and English sentences (located in train.dat files) and trains a hypothesis (saved in hypothesis.txt) using given features (located in features.txt files). Users can choose to train the hypothesis using a decision tree or AdaBoost. The program can then use this hypothesis to predict what language a givene sentence is.
 
 
 # Command Line Arguments
